@@ -1,0 +1,36 @@
+
+###
+Feb. 16
+
+Hi Max,
+
+After review of thesis, I think the strongest publication path is a methodological paper on dynamic social vulnerability typologies.
+We can reframe this work towards more testable hypothesis.
+
+for example, 1) Do FCM-derived typologies capture structure beyond aggregate SoVI/SVI scores? & 
+2) Are inferred vulnerability typologies stable under reasonable methodological choices (PCA retention rules, k=4–8, fuzziness parameter)?
+3)...
+
+For our next revision cycle, please prioritize the following two tasks first:
+
+1. Full PCA reporting (publication standard)
+Please prepare a complete PCA summary for SoVI including:
+• eigenvalues,
+• percent variance explained (and cumulative),
+• component loadings (clearly labeled),
+• and the exact retention rule used.
+
+2. Objective cluster-number validation (beyond post hoc k=6)
+The current “elbow + k=6” justification is not enough for journal review.
+Please run cluster sensitivity for k = 4 to 8 and report comparative metrics across k values, including at minimum:
+• Partition Coefficient (PC),
+• Xie-Beni index (XB),
+• and elbow plot behavior.
+The key is to show why k=6 is defensible relative to k=5 or k=7, not only validate k=6 after selection.
+###
+
+
+Please share draft tables/figures and a short methods note once ready, and we’ll use that as the base for the next manuscript restructuring step.
+
+Best,
+Young
