@@ -1,0 +1,15 @@
+SoVI's reliance on PCA and its additive nature may muddy the influence of certain input variables. Consider a scenario where a census 
+tract has a high poverty rate and also a high median housing value. If poverty rate and median housing value have similar, yet inverted 
+loadings in their respective factors, say, 0.8 for poverty and -0.8 for median house value, when the SoVI score is calculated for that 
+tract they will effectively cancel each other out (0.8 + -0.8 = 0). 
+
+K-means does not suffer from this problem, since the influence of every variable is effictively accounted for during the clustering
+process. Both the high poverty rate and high median housing value affect the cluster assignment of our hypothetical tract. Thus, the 
+tract could be more accurately identified as, for example, being in a transition zone between economic tiers or being in a historically 
+segregated area,rather than just being assigned "medium" or "low" vulnerability. Further, FCM analysis could clarify whether the tract 
+belongs to  a unique cluster of similar tracts, or if it is being pulled equally towards low vulnerability and high vulnerability clusters. 
+
+Both methods accomplish the goal of reducing a large set of variables into a smaller set of interpretable groups. But K-means may be 
+more "honest" than SoVI scores because it allows for more complex interpretations of the interactions between input variables. Nothing 
+is "cancelled out" by the factor loadings in clustering assignment, even when clusters are created based on PCA components and not the
+raw variables themselves. 
